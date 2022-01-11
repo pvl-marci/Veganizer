@@ -17,7 +17,7 @@ class WebViewExampleState extends State<WebViewExample> {
   @override
   Widget build(BuildContext context) {
     return WebView(
-      initialUrl: 'https://www.biocompany.de/bio-company-markt-finden/',
+      initialUrl: 'https://www.biocompany.de/',
       javascriptMode: JavascriptMode.unrestricted,
     );
   }
