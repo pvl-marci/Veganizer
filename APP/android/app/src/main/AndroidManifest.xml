@@ -16,6 +16,7 @@
     <action android:name="android.intent.action.SENDTO" />
     <data android:scheme="smsto" />
   </intent>
+  
   <!-- If your app sends emails -->
   <intent>
     <action android:name="android.intent.action.SEND" />
@@ -53,4 +54,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 </manifest>

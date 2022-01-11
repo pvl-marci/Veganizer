@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:veganizer/veganizer_app.dart';
 
-//
 void main() {
   runApp(const MyApp());
 }

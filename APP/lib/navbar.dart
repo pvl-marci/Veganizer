@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:veganizer/pages/camera_page.dart';
 import 'package:veganizer/pages/recipe_page.dart';
@@ -8,6 +7,7 @@ import 'dart:async';
 class NavBar extends StatefulWidget {
   NavBar(this.stream);
   final Stream<int> stream;
+
   @override
   _NavBarState createState() => _NavBarState();
 }
@@ -36,7 +36,7 @@ class _NavBarState extends State<NavBar> {
         children: [
           CameraPage(),
           WebViewContainer(streamController1.stream),
-          MapLauncherDemo()
+          WebViewExample()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
