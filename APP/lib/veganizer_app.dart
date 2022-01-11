@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:veganizer/pages/camera_page.dart';
-import 'package:veganizer/pages/recipe_page.dart';
-import 'package:veganizer/pages/stores_page.dart';
 import 'package:veganizer/navbar.dart';
-import 'dart:async';
 
 class RootWidget extends StatefulWidget {
   const RootWidget({Key? key}) : super(key: key);

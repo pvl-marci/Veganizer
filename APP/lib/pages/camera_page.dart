@@ -5,9 +5,6 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:veganizer/navbar.dart';
-import 'package:veganizer/pages/recipe_page.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 import 'dart:async';
 
 StreamController<String> streamController1 = StreamController<String>();
@@ -101,7 +98,7 @@ class _CameraPageState extends State<CameraPage> {
     streamController2.add(1);
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse("https://bf3d-92-73-252-184.ngrok.io/upload"),
+      Uri.parse("https://9170-92-73-252-184.ngrok.io/upload"),
     );
     Map<String, String> headers = {"Content-type": "multipart/form-data"};
     request.files.add(
