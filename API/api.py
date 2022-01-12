@@ -22,6 +22,9 @@ app = Flask(__name__)
 
 
 
+
+
+
 @app.route('/upload', methods=["POST"])
 def upload():
     if request.method == "POST" :
@@ -69,6 +72,7 @@ def upload():
         results = soup.find_all('a', attrs={'class': 'entry-image-link'})
         #in Klammern -> Nummer des Gerichts auf Übersichtsseite
         URL_toScrape = results[2]['href']
+        os.remove(filename)
 
         return jsonify({
             "browserUrl": URL_toScrape 
