@@ -15,6 +15,29 @@ class WebViewContainer extends StatefulWidget {
 class WebViewContainerState extends State<WebViewContainer> {
   late WebViewController _webViewController;
 
+  void _showDialog() {
+    // flutter defined function
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Congratulations!"),
+          content: new Text("With this meal you created 91% less CO2!"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Close"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   String url = "";
 
   void initState() {
@@ -27,6 +50,7 @@ class WebViewContainerState extends State<WebViewContainer> {
   void mySetState(String url) {
     setState(() {
       _webViewController.loadUrl(url);
+      _showDialog();
     });
   }
 
