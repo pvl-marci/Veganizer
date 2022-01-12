@@ -131,6 +131,7 @@ class _CameraPageState extends State<CameraPage> {
             child: selectedImage == null
                 ? Text(
                     'Please Pick an image to Upload',
+                    style: TextStyle(color: Colors.grey[400]),
                   )
                 : Image.file(
                     selectedImage!,
