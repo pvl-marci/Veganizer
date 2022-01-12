@@ -133,12 +133,23 @@ class _CameraPageState extends State<CameraPage> {
                     'Please Pick an image to upload',
                     style: TextStyle(color: Colors.grey[400]),
                   )
-                : Image.file(
-                    selectedImage!,
-                    height: 300,
-                    width: 250,
+                : Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                            blurRadius: 2, color: Colors.black, spreadRadius: 2)
+                      ],
+                    ),
+                    child: CircleAvatar(
+                      minRadius: 50,
+                      maxRadius: 100,
+                      foregroundImage: FileImage(selectedImage!),
+                    ),
                   ),
           ),
+          SizedBox(height: 50),
           Center(
               child: Material(
             child: InkWell(
