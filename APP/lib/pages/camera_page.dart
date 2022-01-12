@@ -121,6 +121,7 @@ class _CameraPageState extends State<CameraPage> {
     });
   }
 
+// TODO: Textfeld unter Cambutton
   @override
   Widget build(BuildContext context) {
     return Scaffold(
