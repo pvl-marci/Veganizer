@@ -98,7 +98,7 @@ class _CameraPageState extends State<CameraPage> {
     streamController2.add(1);
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse("https://227e-92-73-252-184.ngrok.io/upload"),
+      Uri.parse("https://7953-92-73-252-184.ngrok.io/upload"),
     );
     Map<String, String> headers = {"Content-type": "multipart/form-data"};
     request.files.add(
@@ -130,7 +130,7 @@ class _CameraPageState extends State<CameraPage> {
           Center(
             child: selectedImage == null
                 ? Text(
-                    'Please Pick an image to Upload',
+                    'Please Pick an image to upload',
                     style: TextStyle(color: Colors.grey[400]),
                   )
                 : Image.file(
