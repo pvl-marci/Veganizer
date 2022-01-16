@@ -98,7 +98,7 @@ class _CameraPageState extends State<CameraPage> {
     streamController2.add(1);
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse("https://a146-92-73-252-184.ngrok.io/upload"),
+      Uri.parse("https://9d59-141-45-94-196.ngrok.io/upload"),
     );
     Map<String, String> headers = {"Content-type": "multipart/form-data"};
     request.files.add(
