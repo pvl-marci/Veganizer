@@ -1,4 +1,4 @@
-# Veganizer Project
+# Veganizer
 
 <div align="center">
 <img src="APP/assets/images/splashscreen.png" alt="Veganizer Screenshot" width="300"/>
