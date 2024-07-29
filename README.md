@@ -1,6 +1,6 @@
 # Veganizer Project
 
-![Veganizer Screenshot](APP/assets/images/splashscreen.png)
+<img src="APP/assets/images/splashscreen.png" alt="Veganizer Screenshot" width="300"/>
 
 This repository contains the Veganizer Project, a Flutter app that identifies meals from photos and suggests vegan recipes. The app utilizes a Flask API and a machine learning model based on VGG19 to classify the meals. Currently, it can distinguish between three dishes.
 
